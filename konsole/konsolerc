@@ -1,0 +1,20 @@
+[Desktop Entry]
+DefaultProfile=Main.profile
+
+[Favorite Profiles]
+Favorites=Main.profile
+
+[KonsoleWindow]
+SaveGeometryOnExit=false
+ShowAppNameOnTitleBar=false
+ShowMenuBarByDefault=false
+
+[MainWindow]
+MenuBar=Disabled
+State=AAAA/wAAAAD9AAAAAAAACbcAAAVhAAAABAAAAAQAAAAIAAAACPwAAAAA
+ToolBarsMovable=Disabled
+Window-Maximized 1440x2560=true
+
+[TabBar]
+TabBarPosition=Top
+TabBarVisibility=ShowTabBarWhenNeeded

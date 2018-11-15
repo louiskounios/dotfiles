@@ -1,7 +1,7 @@
 [Appearance]
 AntiAliasFonts=true
 BoldIntense=false
-ColorScheme=Breeze
+ColorScheme=PaulMillr
 Font=Fira Code,14,-1,5,50,0,0,0,0,0
 LineSpacing=5
 UseFontLineChararacters=false

@@ -75,7 +75,6 @@ setopt PROMPT_CR
 setopt PROMPT_SP
 setopt PROMPT_PERCENT
 setopt PROMPT_SUBST
-setopt TRANSIENT_RPROMPT
 
 # Scripts and Functions
 setopt C_BASES

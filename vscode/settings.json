@@ -68,5 +68,6 @@
 	"explorer.confirmDragAndDrop": false,
 	"explorer.confirmDelete": false,
 	"explorer.openEditors.visible": 0,
-	"terminal.explorerKind": "external"
+	"terminal.explorerKind": "external",
+	"window.titleBarStyle": "custom"
 }

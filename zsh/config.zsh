@@ -20,3 +20,9 @@ SAVEHIST=40000
 autoload -U history-search-end
 zle -N history-beginning-search-backward-end history-search-end
 zle -N history-beginning-search-forward-end history-search-end
+
+# Fetch suggestions asynchronously
+ZSH_AUTOSUGGEST_USE_ASYNC=true
+
+# Set theme for zdharma/fast-syntax-highlighting
+fast-theme --quiet safari

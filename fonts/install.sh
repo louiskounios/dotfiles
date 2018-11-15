@@ -1,21 +1,18 @@
 #!/bin/sh
-URL="https://github.com/ryanoasis/nerd-fonts/releases/download/v2.0.0/FiraCode.zip"
+
+URL="https://github.com/tonsky/FiraCode/releases/download/1.206/FiraCode_1.206.zip"
 
 install() {
-	curl -L -s -o /tmp/fura.zip "$URL"
-	unzip /tmp/fura.zip -d /tmp/FiraCode
-	cp /tmp/FiraCode/*.ttf "$1"
+	curl -L -s -o /tmp/fira.zip "$URL"
+	unzip /tmp/fira.zip -d /tmp/FiraCode
+	# Do not install the 'Bold' variant as it shares a numerical weight (600)
+	# with the 'Retina' variant, interfering with some configurations.
+	mkdir -p "$1" && \
+		cp /tmp/FiraCode/otf/{FiraCode-Light.otf,FiraCode-Medium.otf,FiraCode-Regular.otf,FiraCode-Retina.otf} "$1"
 }
 
 if [ "$(uname -s)" = "Darwin" ]; then
-	if which brew >/dev/null 2>&1; then
-		brew tap homebrew/cask-fonts
-		brew cask install font-firacode-nerd-font
-		brew cask install font-firacode-nerd-font-mono
-	else
-		install ~/Library/Fonts
-	fi
+	install "$HOME/Library/Fonts"
 else
-	mkdir -p ~/.fonts
-	install ~/.fonts
+	install "$HOME/.fonts"
 fi

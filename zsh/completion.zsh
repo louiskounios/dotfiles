@@ -1,4 +1,5 @@
-#!/bin/zsh
+#!/usr/bin/env zsh
+
 # forces zsh to realize new commands
 zstyle ':completion:*' completer _oldlist _expand _complete _match _ignored _approximate
 
@@ -13,3 +14,9 @@ zstyle ':completion:*' rehash true
 
 # menu if nb items > 2
 zstyle ':completion:*' menu select=2
+
+# group results by category
+zstyle ':completion:*' group-name ''
+
+# keep directories and files separated
+zstyle ':completion:*' list-dirs-first true

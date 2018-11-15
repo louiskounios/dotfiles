@@ -1,15 +1,9 @@
-# this block is in alphabetic order
-caarlos0/ports kind:path
-caarlos0/zsh-git-fetch-merge kind:path
-caarlos0/zsh-git-sync kind:path
-caarlos0/zsh-mkc
-caarlos0/zsh-open-pr kind:path
-mafredri/zsh-async
-rupa/z
-zsh-users/zsh-completions
+# Alphabetical order.
+ael-code/zsh-colored-man-pages
 zsh-users/zsh-autosuggestions
+zsh-users/zsh-completions
 
-# these should be at last!
-sindresorhus/pure
-zsh-users/zsh-syntax-highlighting
+# Should be loaded last.
+denysdovhan/spaceship-prompt
+zdharma/fast-syntax-highlighting
 zsh-users/zsh-history-substring-search

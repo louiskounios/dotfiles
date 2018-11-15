@@ -1,2 +1,3 @@
-#!/bin/zsh
-fpath=(~/.docker/completions $fpath)
+#!/usr/bin/env zsh
+
+fpath=("$HOME/.docker/completions" $fpath)

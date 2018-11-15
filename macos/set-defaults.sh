@@ -1,4 +1,5 @@
 #!/bin/sh
+
 # Sets reasonable macOS defaults.
 #
 # Or, in other words, set shit how I like in macOS.
@@ -9,6 +10,7 @@
 #    https://gist.github.com/brandonb927/3195465
 #
 # Run ./set-defaults.sh and you'll be good to go.
+
 if [ "$(uname -s)" != "Darwin" ]; then
 	exit 0
 fi
@@ -54,8 +56,8 @@ echo "  › Require password immediately after sleep or screen saver begins"
 defaults write com.apple.screensaver askForPassword -int 1
 defaults write com.apple.screensaver askForPasswordDelay -int 0
 
-echo "  › Always show scrollbars"
-defaults write NSGlobalDomain AppleShowScrollBars -string "Always"
+echo "  › Show scrollbars when scrolling"
+defaults write NSGlobalDomain AppleShowScrollBars -string "WhenScrolling"
 # Possible values: `WhenScrolling`, `Automatic` and `Always`
 
 echo "  › Disable Dashboard"
@@ -95,12 +97,6 @@ defaults write NSGlobalDomain AppleHighlightColor -string "0.847059 0.847059 0.8
 
 echo "  › Show battery percent"
 defaults write com.apple.menuextra.battery ShowPercent -bool true
-
-if [ ! -z "$TRAVIS_JOB_ID" ]; then
-	echo "  › Speed up wake from sleep to 24 hours from an hour"
-	# http://www.cultofmac.com/221392/quick-hack-speeds-up-retina-macbooks-wake-from-sleep-os-x-tips/
-	sudo pmset -a standbydelay 86400
-fi
 
 echo "  › Removing duplicates in the 'Open With' menu"
 /System/Library/Frameworks/CoreServices.framework/Frameworks/LaunchServices.framework/Support/lsregister \
@@ -160,6 +156,7 @@ defaults write com.apple.Safari IncludeInternalDebugMenu -bool true
 defaults write com.apple.Safari IncludeDevelopMenu -bool true
 defaults write com.apple.Safari WebKitDeveloperExtrasEnabledPreferenceKey -bool true
 defaults write com.apple.Safari "com.apple.Safari.ContentPageGroupIdentifier.WebKit2DeveloperExtrasEnabled" -bool true
+defaults write com.apple.safari "com.apple.Safari.ContentPageGroupIdentifier.WebKit2HiddenPageDOMTimerThrottlingEnabled" -bool true
 defaults write NSGlobalDomain WebKitDeveloperExtras -bool true
 
 echo "  › Disable the annoying backswipe in Chrome"
@@ -182,7 +179,7 @@ echo "  › Remove the animation when hiding/showing the Dock"
 defaults write com.apple.dock autohide-time-modifier -float 0
 
 echo "  › Automatically hide and show the Dock"
-defaults write com.apple.dock autohide -bool true
+defaults write com.apple.dock autohide -bool false
 
 echo "  › Don't animate opening applications from the Dock"
 defaults write com.apple.dock launchanim -bool false
@@ -281,20 +278,6 @@ if [ ! -z "$TRAVIS_JOB_ID" ] && diskutil info disk0 | grep SSD >/dev/null 2>&1; 
 	echo "  ›  Disable the sudden motion sensor as it’s not useful for SSDs"
 	sudo pmset -a sms 0
 fi
-
-#############################
-
-echo ""
-echo "› Media:"
-if [ -z "$KEEP_ITUNES" ]; then
-	echo "  › Disable iTunes helper"
-	disable_agent /Applications/iTunes.app/Contents/MacOS/iTunesHelper.app
-	echo "  › Prevent play button from launching iTunes"
-	unload_agent /System/Library/LaunchAgents/com.apple.rcd.plist
-fi
-
-echo "  › Disable Spotify web helper"
-disable_agent ~/Applications/Spotify.app/Contents/MacOS/SpotifyWebHelper
 
 #############################
 

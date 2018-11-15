@@ -1,4 +1,5 @@
 Host *
+  AddKeysToAgent no
   ServerAliveInterval 60
   StrictHostKeyChecking no
   UseKeychain yes

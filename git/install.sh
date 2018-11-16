@@ -4,5 +4,7 @@
 if [ "$(uname -s)" = "Darwin" ]; then
 	git config --global credential.helper osxkeychain
 else
-	git config --global credential.helper cache
+	# https://stackoverflow.com/a/40312117
+	# git>=v2.11 has support for the `libsecret` credential helper
+	git config --global credential.helper /usr/share/doc/git/contrib/credential/libsecret/git-credential-libsecret
 fi

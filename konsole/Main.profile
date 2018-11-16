@@ -10,8 +10,8 @@ UseFontLineChararacters=false
 CursorShape=1
 
 [General]
-Command=/usr/bin/zsh
-Environment=TERM=xterm-256color,COLORTERM=truecolor,SHELL=/usr/bin/zsh
+Command=/usr/zsh
+Environment=TERM=xterm-256color,COLORTERM=truecolor,SHELL=/usr/zsh
 Name=Main
 Parent=FALLBACK/
 TerminalMargin=50

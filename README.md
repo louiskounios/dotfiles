@@ -1,6 +1,6 @@
 # dotfiles
 
-> Config files for ZSH, terminals, etc. Forked from [caarlos0's dotfiles](caarlos0dotfiles).
+> Config files for ZSH, terminals, etc. Forked from [caarlos0's dotfiles][caarlos0dotfiles].
 
 ![screenshot][scrn]
 

@@ -1,0 +1,9 @@
+#!/usr/bin/env zsh
+#
+# This file will be sourced before any global `zshrc`.
+
+# Prevent the Debian global zshrc file from changing keyboard bindings.
+export DEBIAN_PREVENT_KEYBOARD_CHANGES=true
+
+# Do not run `compinit` when loading the Debian global zhsrc file.
+export skip_global_compinit=true

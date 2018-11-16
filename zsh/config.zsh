@@ -7,6 +7,10 @@ export CLICOLOR=true
 # Turn off special handling of ._* files in tar, etc
 export COPYFILE_DISABLE=1
 
+# https://github.com/gopasspw/gopass/pull/251
+# Solves `gopass` issue with showing password prompt on shell
+export GPG_TTY=$(tty)
+
 # Load zsh functions
 fpath=($DOTFILES/functions $fpath)
 autoload -Uz "$DOTFILES/functions/*(:t)"

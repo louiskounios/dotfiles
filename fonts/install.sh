@@ -9,7 +9,10 @@ install() {
 	# Do not install the 'Bold' variant as it shares a numerical weight (600)
 	# with the 'Retina' variant, interfering with some configurations.
 	mkdir -p "$1" && \
-		cp /tmp/FiraCode/otf/{FiraCode-Light.otf,FiraCode-Medium.otf,FiraCode-Regular.otf,FiraCode-Retina.otf} "$1"
+		cp /tmp/FiraCode/otf/FiraCode-Light.otf "$1" && \
+		cp /tmp/FiraCode/otf/FiraCode-Medium.otf "$1" && \
+		cp /tmp/FiraCode/otf/FiraCode-Regular.otf "$1" && \
+		cp /tmp/FiraCode/otf/FiraCode-Retina.otf "$1"
 }
 
 if [ "$(uname -s)" = "Darwin" ]; then

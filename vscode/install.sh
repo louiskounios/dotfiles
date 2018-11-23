@@ -25,6 +25,6 @@ redhat.vscode-yaml
 Yummygum.city-lights-icon-vsc
 "
 	for module in $modules; do
-		code --install-extension "$module" || true
+		code --install-extension --force "$module" || true
 	done
 fi

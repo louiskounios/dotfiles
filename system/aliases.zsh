@@ -18,6 +18,9 @@ unset GREP_OPTS
 
 alias wget='wget --continue'
 
+# Execute last command with `sudo`.
+alias yolo='sudo $(fc -ln -1)'
+
 # Create directory and cd to it.
 function mkcd() {
 	mkdir -p $@ && cd ${@:$#}

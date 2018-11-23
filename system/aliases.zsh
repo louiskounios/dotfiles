@@ -13,7 +13,7 @@ alias lla='ls -lA'
 GREP_OPTS='--color=auto --exclude-dir={.git}'
 alias grep="grep $GREP_OPTS"
 alias egrep="egrep $GREP_OPTS"
-alias fgrep="ggrep $GREP_OPTS"
+alias fgrep="fgrep $GREP_OPTS"
 unset GREP_OPTS
 
 alias wget='wget --continue'

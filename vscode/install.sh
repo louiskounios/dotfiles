@@ -13,7 +13,7 @@ if test "$(which code)"; then
 	ln -sf "$DOTFILES/vscode/snippets" "$VSCODE_USER_DIR/snippets"
 
 	# from `code --list-extensions`
-	modules="
+	extensions="
 casualjim.gotemplate
 deerawan.vscode-dash
 EditorConfig.EditorConfig
@@ -24,7 +24,7 @@ pnp.polacode
 redhat.vscode-yaml
 Yummygum.city-lights-icon-vsc
 "
-	for module in $modules; do
-		code --install-extension --force "$module" || true
+	for extension in $extensions; do
+		code --install-extension "$extension" --force || true
 	done
 fi

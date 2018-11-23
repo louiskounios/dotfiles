@@ -102,6 +102,15 @@ echo "  › Removing duplicates in the 'Open With' menu"
 /System/Library/Frameworks/CoreServices.framework/Frameworks/LaunchServices.framework/Support/lsregister \
 	-kill -r -domain local -domain system -domain user
 
+echo "  › Set mouse pointer size"
+defaults write com.apple.universalaccess mouseDriverCursorSize -float 1.6
+
+echo "  › Reduce animations"
+defaults write com.apple.universalaccess reduceMotion -bool true
+
+echo "  › Reduce transparency"
+defaults write com.apple.universalaccess reduceTransparency -bool true
+
 #############################
 
 echo ""

@@ -17,6 +17,7 @@ if test "$(which code)"; then
 casualjim.gotemplate
 deerawan.vscode-dash
 EditorConfig.EditorConfig
+esbenp.prettier-vscode
 mgmcdermott.vscode-language-babel
 ms-python.python
 ms-vscode.Go

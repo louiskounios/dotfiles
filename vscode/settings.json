@@ -63,11 +63,12 @@
 		"*.gohtml": "gohtml",
 		"*.tmpl": "gotemplate"
 	},
-	"workbench.iconTheme": "city-lights-icons-vsc-light",
+	"workbench.iconTheme": "ayu",
 	"workbench.activityBar.visible": false,
 	"explorer.confirmDragAndDrop": false,
 	"explorer.confirmDelete": false,
 	"explorer.openEditors.visible": 0,
 	"terminal.explorerKind": "external",
-	"window.titleBarStyle": "custom"
+	"window.titleBarStyle": "custom",
+	"workbench.colorTheme": "Ayu One"
 }

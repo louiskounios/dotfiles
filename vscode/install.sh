@@ -15,6 +15,7 @@ if test "$(which code)"; then
 	# from `code --list-extensions`
 	extensions="
 casualjim.gotemplate
+ccy.ayu-adaptive
 deerawan.vscode-dash
 EditorConfig.EditorConfig
 esbenp.prettier-vscode
@@ -24,7 +25,7 @@ ms-vscode.Go
 PeterJausovec.vscode-docker
 pnp.polacode
 redhat.vscode-yaml
-Yummygum.city-lights-icon-vsc
+teabyii.ayu
 "
 	for extension in $extensions; do
 		code --install-extension "$extension" --force || true

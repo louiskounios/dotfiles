@@ -63,12 +63,16 @@
 		"*.gohtml": "gohtml",
 		"*.tmpl": "gotemplate"
 	},
-	"workbench.iconTheme": "ayu",
+	"workbench.iconTheme": "material-icon-theme",
 	"workbench.activityBar.visible": false,
 	"explorer.confirmDragAndDrop": false,
 	"explorer.confirmDelete": false,
 	"explorer.openEditors.visible": 0,
 	"terminal.explorerKind": "external",
 	"window.titleBarStyle": "custom",
-	"workbench.colorTheme": "Ayu One"
+	"workbench.colorTheme": "Nord",
+	"material-icon-theme.hidesExplorerArrows": true,
+	"material-icon-theme.folders.theme": "classic",
+	"material-icon-theme.opacity": 0.9,
+	"material-icon-theme.activeIconPack": "react_redux"
 }

@@ -6,10 +6,10 @@
 
 [commit]
 	gpgSign = true
-	template = "$HOME/.dotfiles/git/template.txt"
+	template = "~/code/dotfiles/git/template.txt"
 
 [core]
-	excludesfile = "$HOME/.gitignore"
+	excludesfile = "~/.gitignore"
 	editor = vim
 	compression = -1
 	autocrlf = input

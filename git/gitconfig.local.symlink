@@ -30,3 +30,9 @@
 	name = Louis Kounios
 	email = louis@cergos.io
 	signingKey = 14080EE62C3C76F3
+
+[includeIf "gitdir:~/code/"]
+	path = ~/code/.gitconfig
+
+[includeIf "gitdir:~/ovo/code/"]
+	path = ~/ovo/code/.gitconfig

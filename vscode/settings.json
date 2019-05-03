@@ -74,5 +74,7 @@
 	"material-icon-theme.hidesExplorerArrows": true,
 	"material-icon-theme.folders.theme": "classic",
 	"material-icon-theme.opacity": 0.9,
-	"material-icon-theme.activeIconPack": "react_redux"
+	"material-icon-theme.activeIconPack": "react_redux",
+	"window.zoomLevel": 0,
+	"extensions.ignoreRecommendations": true
 }

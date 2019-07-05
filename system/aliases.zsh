@@ -1,15 +1,5 @@
 #!/bin/sh
 
-if [ "$(uname -s)" = "Darwin" ]; then
-	alias ls='ls -FGh'
-else
-	alias ls='ls -Fh --color'
-fi
-
-alias la='ls -A'
-alias ll='ls -l'
-alias lla='ls -lA'
-
 GREP_OPTS='--color=auto --exclude-dir={.git}'
 alias grep="grep $GREP_OPTS"
 alias egrep="egrep $GREP_OPTS"

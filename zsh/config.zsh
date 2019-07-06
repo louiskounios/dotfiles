@@ -17,6 +17,9 @@ export EXA_COLORS='fi=38;5;015:di=38;5;038:ex=38;5;048:ur=38;5;015:uw=38;5;203:u
 export BAT_THEME=OneHalfDark
 export BAT_STYLE="grid,header"
 
+# Make Ctrl+W useful by deleting until a slash or period is encountered.
+export WORDCHARS='*?_-[]~=&;!#$%^(){}<>'
+
 # Turn off special handling of ._* files in tar, etc
 export COPYFILE_DISABLE=1
 

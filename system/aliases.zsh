@@ -16,6 +16,19 @@ function mkcd() {
 	mkdir -p $@ && cd ${@:$#}
 }
 
+function readme() {
+	files=("README.md" "readme.md" "README" "readme")
+	for file in "${files[@]}"; do
+		if [ -f "$file" ]; then
+			cat "$file"
+			return 0
+		fi
+	done
+
+	echo "Unable to find: $files"
+	return 1
+}
+
 # open, pbcopy and pbpaste on Linux.
 if [ "$(uname -s)" != "Darwin" ]; then
 	if [ -z "$(command -v pbcopy)" ]; then

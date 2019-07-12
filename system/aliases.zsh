@@ -29,6 +29,12 @@ function readme() {
 	return 1
 }
 
+function cd() {
+  if [ $# -eq 1 ]; then
+    builtin cd -- "$1" && [ -d .git ] && echo "This is a git repository. Remember to git pull." || true
+  fi
+}
+
 # open, pbcopy and pbpaste on Linux.
 if [ "$(uname -s)" != "Darwin" ]; then
 	if [ -z "$(command -v pbcopy)" ]; then

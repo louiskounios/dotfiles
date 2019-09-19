@@ -1,9 +1,9 @@
 #!/bin/sh
 
-URL="https://github.com/tonsky/FiraCode/releases/download/1.206/FiraCode_1.206.zip"
+URL="https://github.com/tonsky/FiraCode/releases/download/2/FiraCode_2.zip"
 
 install() {
-	rm -rf /tmp/fira.zip /tmp/FiraCode
+	rm -rf /tmp/fira.zip /tmp/FiraCode "$1"/FiraCode*.otf
 	curl -L -s -o /tmp/fira.zip "$URL"
 	unzip /tmp/fira.zip -d /tmp/FiraCode
 	# Do not install the 'Bold' variant as it shares a numerical weight (600)

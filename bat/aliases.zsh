@@ -1,3 +1,4 @@
 #!/bin/sh
 
-alias cat='bat'
+# bat is currently broken on macOS Catalina :-(
+# alias cat='bat'

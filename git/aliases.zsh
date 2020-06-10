@@ -2,5 +2,5 @@
 
 gitignore() {
 	local IFS=","
-	curl -s "https://www.gitignore.io/api/$*"
+	curl -sLw "\n" "https://www.toptal.com/developers/gitignore/api/$*"
 }

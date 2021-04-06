@@ -1,6 +1,6 @@
 #!/bin/sh
 
-URL="https://github.com/tonsky/FiraCode/releases/download/4/Fira_Code_v4.zip"
+URL="https://github.com/tonsky/FiraCode/releases/download/5.2/Fira_Code_v5.2.zip"
 
 install() {
 	rm -rf /tmp/fira.zip /tmp/FiraCode "$1"/FiraCode*.otf

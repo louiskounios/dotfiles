@@ -1,5 +1,0 @@
-player=mpv
-player-args=--cache=8192 --force-seekable=yes --hr-seek=yes --hr-seek-framedrop=yes {filename}
-player-no-close
-
-loglevel=info

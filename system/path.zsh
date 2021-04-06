@@ -12,7 +12,7 @@ path=(
 
 if [ "$(uname -s)" = "Darwin" ]; then
 	if [ "$(arch)" = "arm64" ]; then
-		path=("$(brew --prefix)/bin" $path)
+		path=('/opt/homebrew/bin' $path)
 	fi
 fi
 

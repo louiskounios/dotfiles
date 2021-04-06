@@ -10,4 +10,10 @@ path=(
 	"$HOME/.bin"
 )
 
+if [ "$(uname -s)" = "Darwin" ]; then
+	if [ "$(arch)" = "arm64" ]; then
+		path=('/opt/homebrew/bin' $path)
+	fi
+fi
+
 export PATH

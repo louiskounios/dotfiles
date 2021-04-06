@@ -4,6 +4,21 @@
 	branch = auto
 	ui = true
 
+[color "diff-highlight"]
+	oldNormal = red bold
+	oldHighlight = red bold 52
+	newNormal = green bold
+	newHighlight = green bold 52
+
+[color "diff"]
+	meta = 11
+	frag = magenta bold
+	func = 146 bold
+	commit = yellow bold
+	old = red bold
+	new = green bold
+	whitespace = red reverse
+
 [commit]
 	gpgSign = true
 	template = "~/code/dotfiles/git/template.txt"
@@ -15,6 +30,10 @@
 	autocrlf = input
 	whitespace = trailing-space,space-before-tab
 	precomposeUnicode = true
+	pager = "diff-so-fancy | less --tabs=4 -RFX"
+
+[interactive]
+	diffFilter = "diff-so-fancy --patch"
 
 [grep]
 	extendRegexp = true
@@ -34,5 +53,5 @@
 [includeIf "gitdir:~/code/"]
 	path = ~/code/.gitconfig
 
-[includeIf "gitdir:~/ovo/code/"]
-	path = ~/ovo/code/.gitconfig
+[includeIf "gitdir:~/work/ovo/code/"]
+	path = ~/work/ovo/code/.gitconfig

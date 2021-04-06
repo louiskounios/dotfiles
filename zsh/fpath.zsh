@@ -2,7 +2,7 @@
 
 if [ "$(uname -s)" = "Darwin" ]; then
 	if [ "$(arch)" = "arm64" ]; then
-		fpath=('/opt/homebrew/share/zsh/site-functions' '/opt/homebrew/share/zsh/functions' $fpath)
+		fpath=("$(brew --prefix)/share/zsh/site-functions" "$(brew --prefix)/share/zsh/functions" $fpath)
 	fi
 fi
 

@@ -1,6 +1,6 @@
 #!/usr/bin/env zsh
 
-export PROJECTS="$HOME/code"
+export PROJECTS="$HOME/personal/code"
 export DOTFILES="$PROJECTS/dotfiles"
 
 # Avoid trouble with prompt width.

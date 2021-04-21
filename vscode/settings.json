@@ -63,7 +63,7 @@
 	"editor.fontSize": 13,
 	"editor.autoClosingBrackets": "never",
 	"editor.autoClosingQuotes": "never",
-	"editor.autoIndent": false,
+	"editor.autoIndent": "advanced",
 	"editor.copyWithSyntaxHighlighting": false,
 	"editor.emptySelectionClipboard": false,
 	"editor.folding": false,
@@ -96,5 +96,19 @@
 	"terraform.languageServer": {
 		"enabled": true,
 		"args": []
+	},
+	"workbench.editorAssociations": [
+		{
+			"viewType": "jupyter.notebook.ipynb",
+			"filenamePattern": "*.ipynb"
+		}
+	],
+	"remote.SSH.configFile": "/Users/louis/.ssh/config.local",
+	"python.languageServer": "Pylance",
+	"python.showStartPage": false,
+	"editor.suggestSelection": "first",
+	"vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+	"[python]": {
+		"editor.wordBasedSuggestions": false
 	},
 }

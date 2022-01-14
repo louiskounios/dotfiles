@@ -46,5 +46,5 @@ zle -N history-beginning-search-forward-end history-search-end
 # Fetch suggestions asynchronously
 ZSH_AUTOSUGGEST_USE_ASYNC=true
 
-# Set theme for zdharma/fast-syntax-highlighting
+# Set theme for zdharma-continuum/fast-syntax-highlighting
 fast-theme --quiet safari

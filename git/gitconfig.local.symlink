@@ -51,7 +51,7 @@
 [user]
 	name = Louis Kounios
 	email = louis@cergos.io
-	signingKey = 14080EE62C3C76F3
+	signingKey = 75FE17767E29BC33
 
 [includeIf "gitdir:~/personal/code/"]
 	path = ~/personal/code/.gitconfig

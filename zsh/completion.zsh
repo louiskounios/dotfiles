@@ -20,8 +20,3 @@ zstyle ':completion:*' group-name ''
 
 # keep directories and files separated
 zstyle ':completion:*' list-dirs-first true
-
-# Allow option-stacking for Docker completion.
-zstyle ':completion:*:*:docker:*' option-stacking yes
-zstyle ':completion:*:*:docker-*:*' option-stacking yes
-

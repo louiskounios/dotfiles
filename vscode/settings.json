@@ -35,7 +35,7 @@
 	"editor.fontLigatures": true,
 	"workbench.fontAliasing": "antialiased",
 	"editor.hideCursorInOverviewRuler": true,
-	"editor.occurrencesHighlight": false,
+	"editor.occurrencesHighlight": "off",
 	"editor.renderLineHighlight": "all",
 	"window.closeWhenEmpty": true,
 	"window.newWindowDimensions": "inherit",
@@ -58,7 +58,6 @@
 	"material-icon-theme.folders.theme": "classic",
 	"material-icon-theme.opacity": 0.9,
 	"material-icon-theme.activeIconPack": "react_redux",
-	"window.zoomLevel": 0,
 	"extensions.ignoreRecommendations": true,
 	"editor.fontSize": 13,
 	"editor.autoClosingBrackets": "never",
@@ -74,7 +73,6 @@
 	"editor.acceptSuggestionOnEnter": "off",
 	"files.hotExit": "off",
 	"workbench.startupEditor": "none",
-	"workbench.activityBar.visible": false,
 	"workbench.editor.highlightModifiedTabs": true,
 	"window.restoreWindows": "none",
 	"files.defaultLanguage": "markdown",
@@ -82,7 +80,11 @@
 		"editor.wordWrap": "wordWrapColumn",
 		"editor.wordWrapColumn": 90,
 		"editor.lineNumbers": "off",
-		"editor.quickSuggestions": false,
+		"editor.quickSuggestions": {
+			"comments": "off",
+			"strings": "off",
+			"other": "off"
+		},
 	},
 	"terraform.indexing": {
 		"enabled": false,
@@ -97,18 +99,18 @@
 		"enabled": true,
 		"args": []
 	},
-	"workbench.editorAssociations": [
-		{
-			"viewType": "jupyter.notebook.ipynb",
-			"filenamePattern": "*.ipynb"
-		}
-	],
+	"workbench.editorAssociations": {
+		"*.ipynb": "jupyter.notebook.ipynb"
+	},
 	"remote.SSH.configFile": "/Users/louis/.ssh/config.local",
 	"python.languageServer": "Pylance",
 	"python.showStartPage": false,
 	"editor.suggestSelection": "first",
 	"vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
 	"[python]": {
-		"editor.wordBasedSuggestions": false
+		"editor.wordBasedSuggestions": "off"
 	},
+	"redhat.telemetry.enabled": false,
+	"security.workspace.trust.untrustedFiles": "open",
+	"workbench.activityBar.location": "hidden",
 }

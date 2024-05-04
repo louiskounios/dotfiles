@@ -1,6 +1,9 @@
 Host *
   AddKeysToAgent no
+  UseKeychain yes
   ServerAliveInterval 60
-  StrictHostKeyChecking no
+  StrictHostKeyChecking yes
+  IdentitiesOnly yes
+  IdentityFile ~/.ssh/id_ed25519
 
 Include ~/.ssh/config.local

@@ -15,17 +15,9 @@ if test "$(which code)"; then
 	# from `code --list-extensions`
 	extensions="
 arcticicestudio.nord-visual-studio-code
-casualjim.gotemplate
-deerawan.vscode-dash
 EditorConfig.EditorConfig
-esbenp.prettier-vscode
-mgmcdermott.vscode-language-babel
 ms-python.python
-ms-vscode.Go
-PeterJausovec.vscode-docker
 PKief.material-icon-theme
-pnp.polacode
-redhat.vscode-yaml
 "
 	for extension in $extensions; do
 		code --install-extension "$extension" --force || true

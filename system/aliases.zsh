@@ -8,14 +8,6 @@ unset GREP_OPTS
 
 alias wget='wget --continue'
 
-# Execute last command with `sudo`.
-alias yolo='sudo $(fc -ln -1)'
-
-# Create directory and cd to it.
-function mkcd() {
-	mkdir -p $@ && cd ${@:$#}
-}
-
 function readme() {
 	files=("README.md" "readme.md" "README" "readme")
 	for file in "${files[@]}"; do
@@ -27,12 +19,6 @@ function readme() {
 
 	echo "Unable to find: $files"
 	return 1
-}
-
-function cd() {
-  if [ $# -eq 1 ]; then
-    builtin cd -- "$1" && [ -d .git ] && echo "This is a git repository. Remember to git pull." || true
-  fi
 }
 
 # open, pbcopy and pbpaste on Linux.

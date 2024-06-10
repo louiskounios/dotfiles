@@ -7,7 +7,7 @@ path=(
 	"/usr/sbin"
 	"/sbin"
 	"$DOTFILES/bin"
-	"$HOME/.bin"
+	"$HOME/bin"
 )
 
 if [ "$(uname -s)" = "Darwin" ]; then

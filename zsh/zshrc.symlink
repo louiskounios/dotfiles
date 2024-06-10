@@ -35,7 +35,12 @@ for file in ${(M)config_files:#$DOTFILES/(^system)/path.zsh}; do
 done
 
 # load antidote plugins
-source "$(brew --prefix)/opt/antidote/share/antidote/antidote.zsh"
+if [ "$(uname -s)" = "Darwin" ]; then
+	ANTIDOTE_DIR="$(brew --prefix)/opt/antidote/share/antidote"
+else
+	ANTIDOTE_DIR="${HOME}/.antidote"
+fi
+source "${ANTIDOTE_DIR}/antidote.zsh"
 antidote load
 
 # load everything but the path and completion files
